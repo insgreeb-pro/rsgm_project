@@ -22,7 +22,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     </head>
 
     <body class="bg-gradient-primary" id=page-top>
@@ -76,7 +76,7 @@
                                     <br>Universitas Muhammadiyah Yogyakarta dalam upayanya<br>
                                     untuk menjadi rumah sakit ramah lingkungan</h2>
                 
-                                <a href="#" class="btn btn-success btn-icon-split m-3">
+                                <a href="survey.php" class="btn btn-success btn-icon-split m-3">
                                     <span class="icon text-white-50">
                                     <i class="fas fa-check"></i>
                                     </span>
