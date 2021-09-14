@@ -76,7 +76,7 @@ CREATE TABLE rsgm.realtime_data(
    noise_audio NUMERIC,
    voc NUMERIC,
    ach NUMERIC,
-   airpressure NUMERIC,
+   co NUMERIC,
    CONSTRAINT fk_ruangan
      FOREIGN KEY(ruangan_id)
        REFERENCES rsgm.ruangan(ruangan_id)
