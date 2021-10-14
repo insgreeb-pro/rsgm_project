@@ -53,7 +53,7 @@
                         </li>
                         <div class="topbar-divider d-none d-sm-block"></div>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.php" role="button">
+                            <a class="nav-link" href="login.html" role="button">
                                 <span>Login Admin</span>
                             </a>
                         </li>
@@ -114,7 +114,7 @@
                                                                         Me</label>
                                                                 </div>
                                                             </div>
-                                                            <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                                            <a href="indexieq.php" class="btn btn-primary btn-user btn-block">
                                                                 Login
                                                             </a>
                                                         </form>
