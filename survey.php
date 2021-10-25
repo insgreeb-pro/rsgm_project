@@ -1,6 +1,5 @@
 <?php
     include 'connect.php';
-
 ?>
 
 <!doctype html>
@@ -83,9 +82,6 @@
                                                     <option value="2">Lantai 1 - Poli Gigi 2</option>
                                                     <option value="3">Lantai 1 - Poli Gigi 3</option>
                                                     <option value="4">Lantai 1 - Poli Gigi 4</option>
-                                                    <option value="5">Lantai 1 - Poli Gigi Anak</option>
-                                                    <option value="6">Lantai 2 - Ruang Operasi</option>
-                                                    <option value="7">Lantai 2 - Ruang Post-Operasi</option>
                                                 </select> 
                                             </div>
                                             <h2 class="h4 text-gray-900 mb-4">Kenyamanan Termal</h2>
@@ -93,35 +89,35 @@
                                                 <h3 class="h5 text-gray-900">Sensasi termal yang Anda rasakan di ruangan ini:</h3>
                                                 <label for="sensasi_termal"></label>
                                                 <select class="custom-select" id="sensasi_termal" name="sensasi_termal">
-                                                    <option value="Dingin">Dingin</option>
-                                                    <option value="Sejuk">Sejuk</option>
-                                                    <option value="Cukup sejuk">Cukup sejuk</option>
-                                                    <option value="Netral">Netral</option>
-                                                    <option value="Cukup hangat">Cukup hangat</option>
-                                                    <option value="Hangat">Hangat</option>
-                                                    <option value="Panas">Panas</option>
+                                                    <option value="1">Dingin</option>
+                                                    <option value="2">Sejuk</option>
+                                                    <option value="3">Cukup sejuk</option>
+                                                    <option value="4">Netral</option>
+                                                    <option value="5">Cukup hangat</option>
+                                                    <option value="6">Hangat</option>
+                                                    <option value="7">Panas</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
                                                 <h3 class="h5 text-gray-900 mb-2">Suhu dan Kelembaban di ruangan ini?</h3>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey" name="kenyamanan_termal" id="sangat_buruk" value="sangat buruk">
+                                                    <input type="radio" class="survey" name="kenyamanan_termal" id="sangat_buruk" value="1">
                                                     <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Disappointed_but_Relieved_Emoji_Icon_1e554748-dab1-472b-937e-54ecd95ee75c_large.png?v=1571606089" alt="sangat buruk">
                                                 </label>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey"  name="kenyamanan_termal" id="buruk" value="buruk">
+                                                    <input type="radio" class="survey"  name="kenyamanan_termal" id="buruk" value="2">
                                                     <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Worried_Face_Emoji_12fa1bbf-0297-4818-8298-d6c1a588c341_large.png?v=1571606036">
                                                 </label>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey" name="kenyamanan_termal" id="cukup" value="cukup">
+                                                    <input type="radio" class="survey" name="kenyamanan_termal" id="biasa" value="3">
                                                         <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Neutral_Face_Emoji_large.png?v=1571606037">
                                                 </label>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey"  name="kenyamanan_termal" id="baik" value="baik">
+                                                    <input type="radio" class="survey"  name="kenyamanan_termal" id="bagus" value="4">
                                                     <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Slightly_Smiling_Face_Emoji_87fdae9b-b2af-4619-a37f-e484c5e2e7a4_large.png?v=1571606036">
                                                 </label>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey"  name="kenyamanan_termal" id="sangat_baik" value="sangat baik" checked>
+                                                    <input type="radio" class="survey"  name="kenyamanan_termal" id="sangat_bagus" value="5" checked>
                                                     <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Emoji_with_Smiling_Eyes_large.png?v=1571606035">
                                                 </label> 
                                             </div>                                
@@ -129,23 +125,23 @@
                                             <h2 class="h4 text-gray-900 mb-4">Kenyamanan Visual</h2>
                                                 <h5 text-gray-900 mb-2>Kondisi visual dan pencahayaan di ruangan ini?</h5>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey" name="kenyamanan_visual" id="sangat_buruk" value="sangat buruk">
-                                                    <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Disappointed_but_Relieved_Emoji_Icon_1e554748-dab1-472b-937e-54ecd95ee75c_large.png?v=1571606089" alt="sangat buruk">
+                                                    <input type="radio" class="survey" name="kenyamanan_visual" id="sangat_buruk" value="1">
+                                                    <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Disappointed_but_Relieved_Emoji_Icon_1e554748-dab1-472b-937e-54ecd95ee75c_large.png?v=1571606089">
                                                 </label>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey"  name="kenyamanan_visual" id="buruk" value="buruk">
+                                                    <input type="radio" class="survey"  name="kenyamanan_visual" id="buruk" value="2">
                                                     <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Worried_Face_Emoji_12fa1bbf-0297-4818-8298-d6c1a588c341_large.png?v=1571606036">
                                                 </label>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey" name="kenyamanan_visual" id="cukup" value="cukup">
-                                                        <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Neutral_Face_Emoji_large.png?v=1571606037">
+                                                    <input type="radio" class="survey" name="kenyamanan_visual" id="biasa" value="3">
+                                                    <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Neutral_Face_Emoji_large.png?v=1571606037">
                                                 </label>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey"  name="kenyamanan_visual" id="baik" value="baik">
+                                                    <input type="radio" class="survey"  name="kenyamanan_visual" id="bagus" value="4">
                                                     <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Slightly_Smiling_Face_Emoji_87fdae9b-b2af-4619-a37f-e484c5e2e7a4_large.png?v=1571606036">
                                                 </label>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey"  name="kenyamanan_visual" id="sangat_baik" value="sangat baik" checked>
+                                                    <input type="radio" class="survey"  name="kenyamanan_visual" id="sangat_bagus" value="5" checked>
                                                     <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Emoji_with_Smiling_Eyes_large.png?v=1571606035">
                                                 </label>
                                             </div>
@@ -153,23 +149,23 @@
                                             <h2 class="h4 text-gray-900 mb-4">Kenyamanan Akustik</h2>
                                                 <p>Kondisi akustik di ruangan ini?</p>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey" name="kenyamanan_akustik" id="sangat_buruk" value="sangat buruk">
-                                                    <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Disappointed_but_Relieved_Emoji_Icon_1e554748-dab1-472b-937e-54ecd95ee75c_large.png?v=1571606089" alt="sangat buruk">
+                                                    <input type="radio" class="survey" name="kenyamanan_akustik" id="sangat_buruk" value="1">
+                                                    <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Disappointed_but_Relieved_Emoji_Icon_1e554748-dab1-472b-937e-54ecd95ee75c_large.png?v=1571606089">
                                                 </label>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey"  name="kenyamanan_akustik" id="buruk" value="buruk">
+                                                    <input type="radio" class="survey"  name="kenyamanan_akustik" id="buruk" value="2">
                                                     <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Worried_Face_Emoji_12fa1bbf-0297-4818-8298-d6c1a588c341_large.png?v=1571606036">
                                                 </label>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey" name="kenyamanan_akustik" id="cukup" value="cukup">
-                                                        <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Neutral_Face_Emoji_large.png?v=1571606037">
+                                                    <input type="radio" class="survey" name="kenyamanan_akustik" id="biasa" value="3">
+                                                    <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Neutral_Face_Emoji_large.png?v=1571606037">
                                                 </label>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey"  name="kenyamanan_akustik" id="baik" value="baik">
+                                                    <input type="radio" class="survey"  name="kenyamanan_akustik" id="bagus" value="4">
                                                     <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Slightly_Smiling_Face_Emoji_87fdae9b-b2af-4619-a37f-e484c5e2e7a4_large.png?v=1571606036">
                                                 </label>
                                                 <label class="custom-survey-label">
-                                                    <input type="radio" class="survey"  name="kenyamanan_akustik" id="sangat_baik" value="sangat baik" checked>
+                                                    <input type="radio" class="survey"  name="kenyamanan_akustik" id="sangat_bagus" value="5" checked>
                                                     <img class="emoji" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Emoji_with_Smiling_Eyes_large.png?v=1571606035">
                                                 </label>
                                             </div>
@@ -207,6 +203,5 @@
 
         <!-- Page level plugins -->
         <script src="vendor/chart.js/Chart.min.js"></script>
-
 
 </html>
