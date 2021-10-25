@@ -1,6 +1,11 @@
 <?php
     include 'connect.php';
-
+    
+    session_start();
+    
+    if (!isset($_SESSION['email'])){
+        header("location:index.php");
+    }
 ?>
 
 <!doctype html>
@@ -48,16 +53,16 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="poli_gigi_1.html">Poli Gigi 1</a>
                         <a class="collapse-item" href="poli_gigi_2.html">Poli Gigi 2</a>
-                        <a class="collapse-item" href="poli_gigi_3.html">Poli Gigi 3</a>
-                        <a class="collapse-item" href="poli_gigi_4.html">Poli Gigi 4</a>
-                        <a class="collapse-item" href="poli_gigi_anak.html">Poli Gigi Anak</a>
-                        <a class="collapse-item" href="poli_pendidikan.html">Poli Pendidikan</a>
-                        <a class="collapse-item" href="ruang_tunggu.html">Ruang Tunggu</a>
-                        <a class="collapse-item" href="lobi.html">Lobi</a>
-                        <a class="collapse-item" href="ruang_perawat_1.html">Ruang Perawat</a>
-                        <a class="collapse-item" href="xray_1.html">Dental X-Ray 1</a>
-                        <a class="collapse-item" href="xray_2.html">Dental X-Ray 2</a>
-                        <a class="collapse-item" href="xray_3.html">Dental X-Ray 3</a>
+                        <a class="collapse-item" href="404.html">Poli Gigi 3</a>
+                        <a class="collapse-item" href="404.html">Poli Gigi 4</a>
+                        <a class="collapse-item" href="404.html">Poli Gigi Anak</a>
+                        <a class="collapse-item" href="404.html">Poli Pendidikan</a>
+                        <a class="collapse-item" href="404.html">Ruang Tunggu</a>
+                        <a class="collapse-item" href="404.html">Lobi</a>
+                        <a class="collapse-item" href="404.html">Ruang Perawat</a>
+                        <a class="collapse-item" href="404.html">Dental X-Ray 1</a>
+                        <a class="collapse-item" href="404.html">Dental X-Ray 2</a>
+                        <a class="collapse-item" href="404.html">Dental X-Ray 3</a>
                     </div>
                 </div>
             </li>
@@ -72,17 +77,17 @@
                 <div id="collapseLt2" class="collapse" aria-labelledby="headingLt2"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="ruang_2A.html">Poli Pendidikan</A></a>
-                        <a class="collapse-item" href="ruang_2B.html">Instalasi Rawat Inap 1</a>
-                        <a class="collapse-item" href="ruang_2C.html">Ruang Operasi</a>
-                        <a class="collapse-item" href="ruang_2D.html">Ruang Post-Operasi</a>
-                        <a class="collapse-item" href="ruang_2D.html">Ruang Pre-Operasi</a>
-                        <a class="collapse-item" href="ruang_2E.html">ICU</a>
-                        <a class="collapse-item" href="ruang_2F.html">Ruang Manajemen</a>
-                        <a class="collapse-item" href="ruang_2G.html">Ruang Direktur</a>
-                        <a class="collapse-item" href="ruang_2H.html">Ruang Tunggu Keluarga</a>
-                        <a class="collapse-item" href="ruang_2I.html">Nurse Station</a>
-                        <a class="collapse-item" href="ruang_2J.html">Area Diskusi</a>
+                        <a class="collapse-item" href="404.html">Poli Pendidikan</A></a>
+                        <a class="collapse-item" href="404.html">Instalasi Rawat Inap 1</a>
+                        <a class="collapse-item" href="404.html">Ruang Operasi</a>
+                        <a class="collapse-item" href="404.html">Ruang Post-Operasi</a>
+                        <a class="collapse-item" href="404.html">Ruang Pre-Operasi</a>
+                        <a class="collapse-item" href="404.html">ICU</a>
+                        <a class="collapse-item" href="404.html">Ruang Manajemen</a>
+                        <a class="collapse-item" href="404.html">Ruang Direktur</a>
+                        <a class="collapse-item" href="404.html">Ruang Tunggu Keluarga</a>
+                        <a class="collapse-item" href="404.html">Nurse Station</a>
+                        <a class="collapse-item" href="404.html">Area Diskusi</a>
                     </div>
                 </div>
             </li>
@@ -98,19 +103,17 @@
                 <div id="collapseLt3" class="collapse" aria-labelledby="headingLt3"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="ruang_3A.html">Poli Pendidikan</a>
-                        <a class="collapse-item" href="ruang_3B.html">Ruang OCSE</a>
-                        <a class="collapse-item" href="ruang_3C.html">Ruang Dosen</a>
-                        <a class="collapse-item" href="ruang_3D.html">Ruang Komite Medik</a>
-                        <a class="collapse-item" href="ruang_3E.html">Ruang PDGI</a>
-                        <a class="collapse-item" href="ruang_3F.html">Kantor Manajemen</a>
+                        <a class="collapse-item" href="404.html">Poli Pendidikan</a>
+                        <a class="collapse-item" href="404.html">Ruang OCSE</a>
+                        <a class="collapse-item" href="404.html">Ruang Dosen</a>
+                        <a class="collapse-item" href="404.html">Ruang Komite Medik</a>
+                        <a class="collapse-item" href="404.html">Ruang PDGI</a>
+                        <a class="collapse-item" href="404.html">Kantor Manajemen</a>
                     </div>
                 </div>
             </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider">
-
             <!-- Nav Item - Lantai 4 -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLt4"
@@ -120,10 +123,10 @@
                 <div id="collapseLt4" class="collapse" aria-labelledby="headingLt4"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="ruang_4A.html">Poli Pendidikan </a>
-                        <a class="collapse-item" href="ruang_4B.html">Student Center</a>
-                        <a class="collapse-item" href="ruang_4C.html">Aula</a>
-                        <a class="collapse-item" href="ruang_4D.html">Mushola</a>
+                        <a class="collapse-item" href="404.html">Poli Pendidikan </a>
+                        <a class="collapse-item" href="404.html">Student Center</a>
+                        <a class="collapse-item" href="404.html">Aula</a>
+                        <a class="collapse-item" href="404.html">Mushola</a>
                     </div>
                 </div>
             </li>
@@ -138,8 +141,8 @@
                 <div id="collapseLt5" class="collapse" aria-labelledby="headingLt5"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="ruang_5A.html">Kantor Manajemn</a>
-                        <a class="collapse-item" href="ruang_5B.html">Kantor Komisaris</a>
+                        <a class="collapse-item" href="404.html">Kantor Manajemn</a>
+                        <a class="collapse-item" href="404.html">Kantor Komisaris</a>
                     </div>
                 </div>
             </li>
@@ -165,71 +168,66 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
+                    <!-- Sidebar Toggle (Topbar) End -->
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="energi.php" role="button">
-                                <span>Energi</span>
+                            <a class="nav-link" href="ieq.php" role="button">
+                                <span>Dashboard IEQ</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="air.php" role="button">
-                                <span>Air</span>
+                            <a class="nav-link" href="material.php" role="button">
+                                <span>Material Rendah Emisi</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="site.php" role="button">
-                                <span>Site Planning</span>
+                                <span>Site Plan</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="ieq.php" role="button">
-                                <span>IEQ</span>
+                            <a class="nav-link" href="sensor.php" role="button">
+                                <span>Sensor</span>
                             </a>
                         </li>
+                        
                         <div class="topbar-divider d-none d-sm-block"></div>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php" role="button">
-                                <span>LogOut</span>
+                            <a class="nav-link" href="logout.php">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Logout
                             </a>
                         </li>
                     </ul>
+                    <!-- Topbar Navbar End -->
                 </nav>
+                <!-- Topbar End -->
                 
                 <!-- Begin Page Content -->
-                <!-- queerying data -->
+                
                 <?php //prepping data//
                     //variabel status sessor temperatur
-                    $status_sensor_temperatur = false;
-                    $status_sensor_iluminansi = false;
-                    $status_sensor_kelembapan = false;
-                    $status_sensor_noise = false;
-                    $status_sensor_co2 = false;
-                    $status_sensor_pm2_5 = false;
-                    $status_sensor_pm10 = false;
-                    $status_sensor_co = false;
-                    $status_sensor_voc = false;
-                    $status_sensor_airpressure = false;
-                    $status_sensor_ach = false;
-                    $status_sensor_formaldehida=false;
-                                    
+                                                        
                     // Query Realtime Data //
                     $query = $conn->query("SELECT 
-                    DATE_TRUNC('second',waktu_db) AS waktu_db, 
+                    TO_CHAR(waktu_akuisisi, 'dd/MM/yyyy HH:mm:ss') AS waktu, 
                     ROUND(iluminansi,1) AS iluminansi, 
                     ROUND(temperatur,1) AS temperatur,
-                    ROUND(kelembaban,1) AS kelembapan,
+                    ROUND(kelembapan,1) AS kelembapan,
                     ROUND(co2, 0) AS co2,
+                    ROUND(co, 0) AS co,
                     ROUND(ach,0) AS vent_rate,
                     ROUND(voc, 3) AS voc,
                     ROUND(noise_audio,0) AS noise,
                     ROUND(pm2_5, 0) AS pm2_5,
                     ROUND(pm10, 3) AS pm10,
-                    ROUND(airspeed, 2) AS airspeed
+                    ROUND(airspeed, 2) AS airspeed,
+                    jumlah_penghuni
                     FROM rsgm.realtime_data 
                     WHERE ruangan_id = 1 
-                    ORDER BY waktu_db DESC 
+                    ORDER BY waktu_akuisisi DESC 
                     LIMIT 1");
                     if(!$query){
                         #echo "Error";
@@ -237,15 +235,22 @@
                     }else{
                         $rowdata = $query->fetch(PDO::FETCH_ASSOC);
                     }
+                    $query_ruangan = $conn->query("SELECT kapasitas FROM rsgm.ruangan WHERE ruangan_id = 1");
+                    if(!$query_ruangan){
+                        exit;
+                    }else{
+                        $row = $query->fetch(PDO::FETCH_ASSOC);
+                    }
                 ?>
+                
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
                     <div class="d-xl-flex align-items-left mb-3">
                         <h1 class="h2 mb-2 text-gray-800"> Indoor Environment Quality Monitoring</h1>
                         <h3 class="h4 mb-2 text-gray-800">Lantai 1, Poli Gigi 1</h3>
-                        <h5 class="h6 mb-2 text-blue-800">Last Update: <?php echo ($rowdata['waktu_db'])?></h5>
                     </div>
+                    <!-- Page Heading End -->
 
                     <!-- main content -->                 
                     <div class="row">
@@ -261,249 +266,271 @@
                                 </div>
                                 <!-- body card -->
                                 <div class="card-body">
-                                    <div class="grid grid-cols-5 my-5">
-                                        <div class="text-center grid place-items-center col-span-5 lg:col-span-1 border-b-2 lg:border-none">
-                                        <div class="">
-                                            <p class="text-3xl lg:text-xl mb-3">IEQ Keseluruhan</p>
-                                            <p class="text-5xl lg:text-3xl mb-5 lg:mb-0 text-green-500 font-bold">BAIK</p>
+                                    <div class="grid grid-cols-6 my-2">
+                                        <div class="text-center grid place-items-center col-span-1 border-b-2 lg:border-none">
+                                            <div class="">
+                                                <p class="text-lg lg:text-lg mb-3">Update Terakhir:</p>
+                                                <p class="text-lg lg:text-lg mb-5 lg:mb-0 text-green-500"><?php echo $rowdata['waktu']; ?></p>
+                                            </div>
                                         </div>
-                                        </div>
-                                        <div class="col-span-5 text-3xl lg:text-base lg:col-span-4 mr-1">
-                                        <div class="grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 mb-5 space-y-5">
-                                            <div class="text-center flex-row items-center">
-                                                <p class="font-semibold">Temperature</p>
-                                                <p class="text-green-500 font-bold"><?php 
-                                                    if(empty($rowdata['temperatur'])){
-                                                        echo "--";
-                                                        $status_sensor_temperatur=false;
+                                        <div class="col-span-5 text-base lg:text-base lg:col-span-5 mr-0">
+                                            <div class="grid place-items-center grid-cols-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 mb-2 space-y-1">
+                                                <!-- Jumlah orang -->
+                                                <div class="text-center flex-row items-center">
+                                                    <p class="font-semibold">Jumlah Penghuni</p>
+                                                    <p>
+                                                        <?php
+                                                        if(empty($rowdata['jumlah_penghuni'])){
+                                                            echo "<p class='text-gray-500'>--</p>";
+                                                        }elseif($rowdata['jumlah_penghuni']<$row['kapasitas']){
+                                                            echo ("<p class='text-green-500'>" .  $rowdata['jumlah_penghuni'] . "orang</p>");
+                                                        }else{echo ("<p class='text-red-500'>" .  $rowdata['jumlah_penghuni'] . "orang</p>");}
+                                                    #    echo "<p class='text-red-500'>" . $rowdata['vent_rate']. "ach</p>";
+                                                    #}
+                                                    ?>
+                                                </div>
+                                                <!-- iluminansi -->
+                                                <div class="text-center flex-row items-center">
+                                                    <p class="font-semibold">Iluminansi</p>
+                                                        <?php
+                                                            if(empty($rowdata['iluminansi'])){
+                                                                echo "<p class='text-red-500'>--lux</p>";
+                                                                
+                                                            }elseif($rowdata['iluminansi']>500 && $rowdata['iluminansi']< 850) {
+                                                                echo ("<p class='text-green-500'>" .  $rowdata['iluminansi'] . "lux</p>");
+                                                                
+                                                            }else{
+                                                                echo "<p class='text-red-500'>" . $rowdata['iluminansi']. "lux</p>";}
+                                                        ?>
+                                                </div>
+                                                <!-- noise -->
+                                                <div class="text-center flex-row items-center">
+                                                    <p class="font-semibold">Noise</p>
+                                                    <?php
+                                                        if(empty($rowdata['noise'])){
+                                                            echo "<p class='text-red-500'>--dBA</p>";
+                                                        }elseif($rowdata['noise']<45) {
+                                                            echo ("<p class='text-green-500'>" .  $rowdata['noise'] . "dBA</p>");
+                                                            
+                                                        }else{
+                                                            echo "<p class='text-red-500'>" . $rowdata['noise']. "dBA</p>";}
+                                                    ?>
+                                                </div>
+                                                <!-- temperatur -->
+                                                <div class="text-center flex-row items-center">
+                                                    <p class="font-semibold">Temperatur</p>
+                                                    <?php
+                                                        if(empty($rowdata['temperatur'])){
+                                                            echo "<p class='text-red-500'>--<span>&#176;</span>C</p>";
+                                                        }elseif($rowdata['temperatur']>21 && $rowdata['temperatur']<24) {
+                                                            echo ("<p class='text-green-500'>" .  $rowdata['temperatur'] . "<span>&#176;</span>C</p>");
+                                                        }else{
+                                                            echo "<p class='text-red-500'>" . $rowdata['temperatur']. "<span>&#176;</span>C</p>";}
+                                                    ?> 
+                                                </div>
+                                                <!-- kelembapan -->
+                                                <div class="text-center flex-row items-center">
+                                                    <p class="font-semibold">Kelembapan</p>
+                                                    <?php
+                                                    if(empty($rowdata['kelembapan'])){
+                                                        echo "<p class='text-red-500'>--%</p>";
+                                                        
+                                                    }elseif($rowdata['kelembapan']<60) {
+                                                        echo ("<p class='text-green-500'>" .  $rowdata['kelembapan'] . "%</p>");
+                                                        
                                                     }else{
-                                                        echo ($rowdata['temperatur']);
-                                                        $status_sensor_temperatur=true;
+                                                        echo "<p class='text-red-500'>" . $rowdata['kelembapan']. "%</p>";}
+                                                    ?>
+                                                </div>
+                                                <!-- airspeed -->        
+                                                <div class="text-center flex-row items-center">
+                                                    <p class="font-semibold">Kecepatan Udara</p>
+                                                    <?php
+                                                    if(empty($rowdata['airspeed'])){
+                                                        echo "<p class='text-gray-500'>--m/s</p>";
+                                                        
+                                                    }elseif($rowdata['airspeed']>0.15){
+                                                        echo ("<p class='text-green-500'>" .  $rowdata['airspeed'] . "m/s</p>");
+                                                       
+                                                    }else{
+                                                    echo "<p class='text-red-500'>" . $rowdata['airspeed']. "m/s</p>";
                                                     }
-                                                    ?>  <span>&#176;</span>C
-                                                </p>
+                                                    ?>
+                                                </div>
                                             </div>
-                                            <div class="text-center flex-row items-center">
-                                                <p class="font-semibold">Kelembaban</p>
-                                                <p class="text-green-500 font-bold">
-                                                    <?php 
-                                                    if(empty($rowdata['temperatur'])){
-                                                        echo "--";
-                                                        $status_sensor_temperatur=false;
-                                                    }else{
-                                                        echo ($rowdata['temperatur']);
-                                                        $status_sensor_temperatur=true;
-                                                    }?> %
-                                                </p>
-                                            </div>
-                                            <div class="text-center flex-row items-center">
-                                                <p class="font-semibold">Laju Ventilasi</p>
-                                                <p class="text-green-500 font-bold">
+                                            <div class="grid grid-cols-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 mb-2 space-y-1">
+                                                <!-- ventilation rate -->
+                                                <div class="text-center flex-row items-center">
+                                                    <p class="font-semibold">Pergantian Udara</p>
                                                     <?php
                                                     if(empty($rowdata['vent_rate'])){
-                                                        echo "--";
-                                                        $status_sensor_ach=false;
+                                                        echo "<p class='text-gray-500'>--ach</p>";
+                                                        
+                                                    }elseif($rowdata['vent_rate']>6){
+                                                        echo ("<p class='text-green-500'>" .  $rowdata['vent_rate'] . "ach</p>");
+                                                        
                                                     }else{
-                                                        echo($rowdata['vent_rate']);
-                                                        $status_sensor_ach=true;
+                                                        echo "<p class='text-red-500'>" . $rowdata['vent_rate']. "ach</p>";
                                                     }
                                                     ?>
-                                                 dB</p>
-                                            </div>
-                                            <div class="text-center flex-row items-center">
-                                                <p class="font-semibold">Kecepatan Udara</p>
-                                                <p class="text-green-500 font-bold">
-                                                    <?php 
-                                                    if(empty($rowdata['airspeed'])){
-                                                        echo"--";
-                                                        $status_sensor_voc=false;
-                                                    }else{
-                                                        echo($rowdata['airspeed']);
-                                                        $status_sensor_voc=true;
-                                                    }
+                                                </div>
+                                                <!-- pm 2.5 -->
+                                                <div class="text-center flex-row items-center">
+                                                    <p class="font-semibold">PM 2.5</p>
+                                                    <?php
+                                                        if(empty($rowdata['pm2_5'])){
+                                                            echo "<p class='text-gray-500'>--<span>&#956;</span>/m<sup>3</p>";
+                                                            
+                                                        }elseif($rowdata['pm2_5']<35){
+                                                            echo ("<p class='text-green-500'>" .  $rowdata['co'] . "<span>&#956;</span>/m<sup>3</p>");
+                                                            
+                                                        }else{
+                                                            echo "<p class='text-red-500'>" . $rowdata['co']. "<span>&#956;</span>/m<sup>3</p>";}
                                                     ?>
-                                                    m/s</p>
+                                                </div>
+                                                <!-- pm 10 -->  
+                                                <div class="text-center flex-row items-center">
+                                                    <p class="font-semibold">PM 10</p>
+                                                    <?php
+                                                        if(empty($rowdata['pm10'])){
+                                                            echo "<p class='text-gray-500'>--<span>&#956;</span>/m<sup>3</p>";
+                                                            
+                                                        }elseif($rowdata['pm10']<150){
+                                                            echo ("<p class='text-green-500'>" .  $rowdata['pm10'] . "<span>&#956;</span>/m<sup>3</p>");
+                                                            
+                                                        }else{
+                                                        echo "<p class='text-red-500'>" . $rowdata['pm10']. "<span>&#956;</span>/m<sup>3</p>";
+                                                        }
+                                                    ?>
+                                                </div>
+                                                <!-- co2 -->
+                                                <div class="text-center flex-row items-center">
+                                                    <p class="font-semibold">CO<sub>2</sub></p>
+                                                    <?php
+                                                        if(empty($rowdata['co2'])){
+                                                            echo "<p class='text-gray-500'>--ppm</p>";
+                                                            
+                                                        }else{
+                                                            echo ("<p class='text-gray-500'>" .  $rowdata['co2'] . "ppm</p>");
+                                                            
+                                                        }
+                                                    ?>
+                                                </div>
+                                                <!-- co -->
+                                                <div class="text-center flex-row items-center">
+                                                    <p class="font-semibold">CO</p>
+                                                    <?php
+                                                        if(empty($rowdata['co'])){
+                                                            echo "<p class='text-gray-500'>--ppm</p>";
+                                                            
+                                                        }elseif($rowdata['co']<35){
+                                                            echo ("<p class='text-green-500'>" .  $rowdata['co'] . "ppm</p>");
+                                                            
+                                                        }else{
+                                                            echo "<p class='text-red-500'>" . $rowdata['co']. "ppm</p>";
+                                                        }
+                                                    ?>
+                                                </div>
+                                                <!-- tvoc -->
+                                                <div class="text-center flex-row items-center">
+                                                    <p class="font-semibold">TVOC</p>
+                                                    <?php
+                                                        if(empty($rowdata['voc'])){
+                                                            echo "<p class='text-gray-500'>--mg/m<sup>3</sup></p>";
+                                                            
+                                                        }elseif($rowdata['co']<35){
+                                                            echo ("<p class='text-green-500'>" .  $rowdata['voc'] . "mg/m<sup>3</sup></p>");
+                                                            
+                                                        }else{
+                                                            echo "<p class='text-red-500'>" . $rowdata['voc']. "mg/m<sup>3</sup></p>";
+                                                        }
+                                                    ?>
+                                                </div>
                                             </div>
-                                            <div class="text-center flex-row items-center">
-                                                <p class="font-semibold">CO<sub>2</sub></p>
-                                                <p class="text-green-500 font-bold"><?php echo $rowdata['vent_rate'];?> ach</p>
-                                            </div>
-                                            <div class="text-center flex-row items-center">
-                                                <p class="font-semibold">CO</p>
-                                                <p class="text-green-500 font-bold">0.05 ppm</p>
-                                            </div>
-                                        </div>
-                                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 mb-5 space-y-5">
-                                            <div class="text-center flex-row items-center">
-                                            <p class="font-semibold">PM 2.5</p>
-                                            <p class="text-green-500 font-bold"><?php echo $rowdata['pm2_5'];?> mg/m<sup>3</sup></p>
-                                            </div>
-                                            <div class="text-center flex-row items-center">
-                                            <p class="font-semibold">PM 10</p>
-                                            <p class="text-green-500 font-bold"><?php echo $rowdata['pm10'];?> mg/m<sup>3</sup></p>
-                                            </div>
-                                            <div class="text-center flex-row items-center">
-                                            <p class="font-semibold">CO<sub>2</sub></p>
-                                            <p class="text-green-500 font-bold"><?php echo $rowdata['co2'];?> ppm</p>
-                                            </div>
-                                            <div class="text-center flex-row items-center">
-                                            <p class="font-semibold">CO</p>
-                                            <p class="text-green-500 font-bold">4.5 ppm</p>
-                                            </div>
-                                            <div class="text-center flex-row items-center">
-                                            <p class="font-semibold">TVOC</p>
-                                            <p class="text-green-500 font-bold"><?php echo $rowdata['voc'];?> ppb</p>
-                                            </div>
-                                            <div class="text-center flex-row items-center">
-                                            <p class="font-semibold">Kecepatan udara</p>
-                                            <p class="text-green-500 font-bold">m/s</p>
-                                            </div>
-                                        </div>
                                         </div>
                                     </div>
-                                    <table class = "realtime">
-                                        <tr>
-                                            <th>Temperatur</th>
-                                            <th>Kelembapan</th>
-                                            <th>Ventilation Rate</th>
-                                            <th>VOC</th>
-                                            <th>CO2</th>
-                                            <th>CO</th>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <?php 
-                                                
-                                                ?> 
-                                                degree
-                                            </td>
-                                            <td>
-                                                <?php
-                                                if(empty($rowdata['kelembapan'])){
-                                                    echo "--";
-                                                    $status_sensor_kelembapan=false;
-                                                }else{
-                                                    echo ($rowdata['kelembapan']);
-                                                    $status_sensor_kelembapan=true;
-                                                }
-                                                ?>
-                                                %
-                                            </td>
-                                            <td>
-                                                <?php
-                                                if(empty($rowdata['vent_rate'])){
-                                                    echo "--";
-                                                    $status_sensor_ach=false;
-                                                }else{
-                                                    echo($rowdata['vent_rate']);
-                                                    $status_sensor_ach=true;
-                                                }
-                                                ?>
-                                                ACH
-                                            </td>
-                                            <td>
-                                                <?php
-                                                if(empty($rowdata['voc'])){
-                                                    echo"--";
-                                                    $status_sensor_voc=false;
-                                                }else{
-                                                    echo($rowdata['voc']);
-                                                    $status_sensor_voc=true;
-                                                }
-                                                ?>
-                                                ppm 
-                                            </td>
-                                            <td>
-                                                <?php
-                                                if(empty($rowdata['co2'])){
-                                                    echo"--";
-                                                    $status_sensor_co2=false;
-                                                }else{
-                                                    echo($rowdata['co2']);
-                                                    $status_sensor_co2=true;
-                                                }
-                                                ?> 
-                                                ppm
-                                            </td>
-                                            <td>
-                                                E ppm
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>PM 2.5</th>
-                                            <th>PM 10</th>            
-                                            <th>Iluminansi</th>
-                                            <th>Noise</th>
-                                            <th>Formaldehida</th>
-                                            <th>Air Pressure</th>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <?php
-                                                if(empty($rowdata['2_5'])){
-                                                    echo "E";
-                                                    $status_sensor_pm2_5=false;
-                                                }
-                                                else{
-                                                    echo($rowdata['pm2_5']);
-                                                    $status_sensor_pm2_5=true;
-                                                }
-                                                ?>
-                                                ppm
-                                            </td>
-                                            <td>
-                                                <?php
-                                                if(empty($rowdata['pm10'])){
-                                                    echo "E";
-                                                    $status_sensor_pm10=false;
-                                                }
-                                                else{
-                                                    echo ($rowdata['pm10']);
-                                                    $status_sensor_pm10=true;
-                                                }
-                                                ?>
-                                                ppm
-                                            </td>
-                                            <td>
-                                                <?php
-                                                if(empty($rowdata['iluminansi'])){
-                                                    echo "E";
-                                                    $status_sensor_iluminansi = false;
-                                                }else{
-                                                    echo ($rowdata['iluminansi']);
-                                                    $status_sensor_iluminansi = true;
-                                                    }
-                                                ?>
-                                                lux
-                                            </td>
-                                            <td>
-                                                <?php
-                                                if(empty($rowdata['noise'])){
-                                                    echo"E";
-                                                    $status_sensor_noise=false;
-                                                }else{
-                                                    echo ($rowdata['noise']);
-                                                    $status_sensor_noise=true;
-                                                }                                            
-                                                ?>
-                                                db
-                                            </td>
-                                        </tr>
-                                    </table>
                                 </div>
-                            </div>      
+                            </div>
+                            <!--realtime data card End -->
+
                             <!-- Line graph -->
+                            <?php //Prepping data
+
+                            ?>
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body"> 
+                                    <!-- The Modal -->
+                                    <!--
+                                    <div id="myModal" class="modal">
+                                        <div class="modal-content">
+                                        <canvas id="temp-graph"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="myModal2" class="modal2">
+                                        <div class="modal-content">
+                                        <canvas id="kelemb-graph"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="myModal3" class="modal3">
+                                        <div class="modal-content">
+                                        <canvas id="illum-graph"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="myModal4" class="modal4">
+                                        <div class="modal-content">
+                                        <canvas id="ach-graph"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="myModal5" class="modal5">
+                                        <div class="modal-content">
+                                        <canvas id="airspeed-graph"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="myModal6" class="modal6">
+                                        <div class="modal-content">
+                                        <canvas id="pm2-graph"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="myModal7" class="modal7">
+                                        <div class="modal-content">
+                                        <canvas id="pm1-graph"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="myModal8" class="modal8">
+                                        <div class="modal-content">
+                                        <canvas id="co2-graph"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="myModal9" class="modal9">
+                                        <div class="modal-content">
+                                        <canvas id="co-graph"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="myModal10" class="modal10">
+                                        <div class="modal-content">
+                                        <canvas id="voc-graph"></canvas>
+                                        </div>
+                                    </div>
                                     <div class="chart-area">
                                         <canvas id="myAreaChart"></canvas>
                                     </div>
+                                                    -->
                                     <hr>
-                                    Styling for the area chart can be found in the
-                                    <code>/js/demo/chart-area-demo.js</code> file.
+                                    <div class="flex flex-wrap justify-center space-x-2 space-y-2 my-5">
+                                        <button class="border border-blue-500 px-2 rounded-lg focus:bg-blue-400 focus:text-white" id="temp">Temperatur</button>
+                                        <button class="border border-blue-500 px-2 rounded-lg focus:bg-blue-400 focus:text-white" id="kelemb">Kelembaban</button>
+                                        <button class="border border-blue-500 px-2 rounded-lg focus:bg-blue-400 focus:text-white" id="illum">Illuminansi</button>
+                                        <button class="border border-blue-500 px-2 rounded-lg focus:bg-blue-400 focus:text-white" id="ach">Pergantian Udara</button>
+                                        <button class="border border-blue-500 px-2 rounded-lg focus:bg-blue-400 focus:text-white" id="airspeed">Kecepatan Udara</button>
+                                        <button class="border border-blue-500 px-2 rounded-lg focus:bg-blue-400 focus:text-white" id="pm2">PM 2.5</button>
+                                        <button class="border border-blue-500 px-2 rounded-lg focus:bg-blue-400 focus:text-white" id="pm1">PM 10</button>
+                                        <button class="border border-blue-500 px-2 rounded-lg focus:bg-blue-400 focus:text-white" id="co2">CO<sub>2</sub></button>
+                                        <button class="border border-blue-500 px-2 rounded-lg focus:bg-blue-400 focus:text-white" id="co">CO</button>
+                                        <button class="border border-blue-500 px-2 rounded-lg focus:bg-blue-400 focus:text-white" id="voc">TVOC</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -520,7 +547,7 @@
                                             <th>Sensor Temperatur</th>
                                             <td>
                                                 <?php
-                                                if($status_sensor_temperatur==false){
+                                                if(empty($rowdata['temperatur'])){
                                                     echo ("OFF");
                                                 }else{
                                                     echo("ON");
@@ -532,7 +559,7 @@
                                             <th>Sensor Kelembapan</th>
                                             <td>
                                                 <?php
-                                                if($status_sensor_kelembapan==false){
+                                                if(empty($rowdata['kelembapan'])){
                                                     echo("OFF");
                                                 }else{
                                                     echo("ON");
@@ -544,7 +571,7 @@
                                             <th>Sensor Cahaya</th>
                                             <td>
                                                 <?php
-                                                if($status_sensor_iluminansi==false){
+                                                if(empty($rowdata['iluminansi'])){
                                                     echo("OFF");
                                                 }else{
                                                     echo("ON");
@@ -556,7 +583,7 @@
                                             <th>Sensor Audio</th>
                                             <td>
                                                 <?php
-                                                if($status_sensor_noise==false){
+                                                if(empty($rowdata['noise'])){
                                                     echo("OFF");
                                                 }else{
                                                     echo("ON");
@@ -568,7 +595,7 @@
                                             <th>Sensor CO2</th>
                                             <td>
                                                 <?php
-                                                if($status_sensor_co2==false){
+                                                if(empty($rowdata['co2'])){
                                                     echo("OFF");
                                                 }else{
                                                     echo("ON");
@@ -580,7 +607,7 @@
                                             <th>Sensor CO</th>
                                                 <td>
                                                 <?php
-                                                if($status_sensor_co==false){
+                                                if(empty($rowdata['co'])){
                                                     echo("OFF");
                                                 }else{
                                                     echo("ON");
@@ -589,10 +616,10 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Sensor Formaldehida</th>
+                                            <th>Sensor Pertukaran Udara</th>
                                             <td>
                                                 <?php
-                                                if($status_sensor_formaldehida==false){
+                                                if(empty($rowdata['ach'])){
                                                     echo("OFF");
                                                 }else{
                                                     echo("ON");
@@ -604,7 +631,7 @@
                                             <th>Sensor PM 2.5 </th>
                                             <td>
                                                 <?php
-                                                if($status_sensor_pm2_5==false){
+                                                if(empty($rowdata['pm2_5'])){
                                                     echo("OFF");
                                                 }else{
                                                     echo("ON");
@@ -616,7 +643,7 @@
                                             <th>Sensor PM 10 </th>
                                             <td>
                                                 <?php
-                                                if($status_sensor_pm10==false){
+                                                if(empty($rowdata['pm10'])){
                                                     echo("OFF");
                                                 }else{
                                                     echo("ON");
@@ -628,7 +655,7 @@
                                             <th>Sensor VOC</th>
                                             <td>
                                                 <?php
-                                                if($status_sensor_voc==false){
+                                                if(empty($rowdata['voc'])){
                                                     echo("OFF");
                                                 }else{
                                                     echo("ON");
@@ -637,25 +664,13 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Sensor Ventilation Rate</th>
+                                            <th>Sensor Kecepatan Udara</th>
                                             <td>
                                                 <?php
-                                                if($status_sensor_ach==false){
+                                                if(empty($rowdata['airspeed'])){
                                                     echo("OFF");
                                                 }else{
                                                     echo("ON");
-                                                }
-                                                ?>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>Sensor Air Pressure</th>
-                                            <td>
-                                                <?php
-                                                if($status_sensor_airpressure==true){
-                                                    echo("ON");
-                                                }else{
-                                                    echo("OFF");
                                                 }
                                                 ?>
                                             </td>
@@ -708,8 +723,16 @@
                 </div>
             </div>
         </div>
+    </div>
+    
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    
 
-    <!-- Bootstrap core JavaScript-->
+    <!-- PLS DONT CHANGE THIS OK -->
+    <!-- Bottstrap Core Javascript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -726,10 +749,13 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
-    </body>
- <!-- history section -->
-<!--                     
-        <?php
+    <!-- PLS DONT CHANGE THIS OK (end) -->
+    
+    
+    
+    <!-- Prepp for Line Graph -->
+    <!--Prepping Data For Line Graph-->               
+    <?php
         $tgf = [];
         $waktu = [];
         $igf = [];
@@ -738,203 +764,296 @@
         $nagf = [];
         $airgf = [];
         $querygrafik_menit = $conn->query(
-            "SELECT TO_CHAR(waktu_db, 'HH24:MI:SS') AS waktu, 
+            "SELECT TO_CHAR(waktu_akuisisi, 'DD-Mon-YYYY HH24:MI:SS') AS waktu, 
             ROUND(iluminansi, 1) AS iluminansi, 
             ROUND(temperatur, 1) AS temperatur,
-            ROUND(kelembaban, 1) AS kelembapan,
+            ROUND(kelembapan, 1) AS kelembapan,
             ROUND(ach,0) AS vent_rate,
             ROUND(noise_audio,0) AS noise,
             ROUND(airspeed, 0) AS airspeed
             FROM rsgm.realtime_data 
-            WHERE ruangan_id=1 AND DATE_TRUNC('minute', waktu_db) >= NOW() - interval '15 minutes'
+            WHERE ruangan_id=1 AND DATE_TRUNC('minute', waktu_akuisisi) >= NOW() - interval '15 minutes'
             ORDER BY waktu DESC");
-        while($rowc = $querygrafik_menit->fetch()){
-            $tgf[] = $rowc['temperatur'];
-            $igf[] = $rowc['iluminansi'];
-            $hgf[] = $rowc['kelembapan'];
-            $achgf[] = $rowc['ach'];
-            $nagf[] = $rowc['noise'];
-            $airgf [] = $airgf['airspeed'];
-            $waktu[] = $rowc['waktu'];
+        while($rowgm = $querygrafik_menit->fetch()){
+            $tgf[] = $rowgm['temperatur'];
+            $igf[] = $rowgm['iluminansi'];
+            $hgf[] = $rowgm['kelembapan'];
+            $achgf[] = $rowgm['ach'];
+            $nagf[] = $rowgm['noise'];
+            $airgf [] = $rowgm['airspeed'];
+            $waktu[] = $rowgm['waktu'];
         }
         
         $querygrafik_harian= $conn->query(
-        "SELECT TO_CHAR(DATE_TRUNC('hour', waktu_db), 'HH24:MI') AS waktu_jam, 
-        ROUND(AVG(voc), 2) as tvoc, 
-        ROUND(AVG(pm2_5),2) as pm2_5,
-        ROUND(AVG(pm10), 2) as pm10,
-        ROUND(AVG(co2), 2) as co2,
-        ROUND(AVG(co), 2) as co
-        FROM rsgm.realtime_data
-        WHERE ruangan_id=1 AND DATE_TRUNC('day', waktu_db) >= NOW() - interval '1 day'
-        GROUP BY DATE waktu_jam
-        ORDER BY waktu_db DESC 
-        ");
+            "SELECT TO_CHAR(DATE_TRUNC('hour', waktu_akuisisi), 'HH24:MI') AS waktu_jam, 
+            ROUND(AVG(voc), 2) as tvoc, 
+            ROUND(AVG(pm2_5),2) as pm2_5,
+            ROUND(AVG(pm10), 2) as pm10,
+            ROUND(AVG(co2), 2) as co2,
+            ROUND(AVG(co), 2) as co
+            FROM rsgm.realtime_data
+            WHERE ruangan_id=1 AND DATE_TRUNC('day', waktu_akuisisi) >= NOW() - interval '1 day'
+            GROUP BY DATE waktu_jam
+            ORDER BY waktu_akuisisi DESC"
+            );
         $waktu_jam=[];
         $co2gf = [];
         $tvocgf = [];
         $pm25gf = [];
         $pm10gf = [];
         $cogf = [];
-        while ($rowc = $querygrafik_harian->fetch()){
-            $co2gf[] = $rowc['co2'];
-            $cogf[] = $rowc['co'];
-            $vocgf[] = $rowc['voc'];
-            $pm25gf[] = $rowc['pm2_5'];
-            $pm10gf[] = $rowc['pm10'];
-            $waktu_jam[] = $rowc['waktu_jam'];
+        while ($rowgh = $querygrafik_harian->fetch()){
+            $co2gf[] = $rowgh['co2'];
+            $cogf[] = $rowgh['co'];
+            $vocgf[] = $rowgh['tvoc'];
+            $pm25gf[] = $rowgh['pm2_5'];
+            $pm10gf[] = $rowgh['pm10'];
+            $waktu_jam[] = $rowgh['waktu_jam'];
         }
-        ?>
--->                        
+    ?>
+    <script>
+        var waktu = <?php echo json_encode($waktu); ?>;
+        var waktu = waktu.reverse();
+        var temperatur = <?php echo json_encode($tgf); ?>;
+        var temperatur = temperatur.reverse();
+        var iluminansi = <?php echo json_encode($igf); ?>;
+        var iluminansi = iluminansi.reverse();
+        var kelembapan = <?php echo json_encode($hgf); ?>;
+        var kelembapan = kelembapan.reverse();
+        var co2 = <?php echo json_encode($co2gf); ?>;
+        var co2 = co2.reverse();
+        var ach = <?php echo json_encode($achgf); ?>;
+        var ach = ach.reverse();
+        var voc = <?php echo json_encode($vocgf); ?>;
+        var voc = voc.reverse();
+        var noise = <?php echo json_encode($nagf); ?>;
+        var noise = noise.reverse();
+        var pm25 = <?php echo json_encode($pm25gf); ?>;
+        var pm25 = pm25.reverse();
+        var pm10 = <?php echo json_encode($pm10gf); ?>;
+        var pm10 = pm10.reverse();
+    </script>
+    <!--Prepping Data For Line Graph End-->
+    <script src="grafik.js"></script>
+    <!-- Modals for Line graph -->
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      var modal2 = document.getElementById("myModal2");
+      var modal3 = document.getElementById("myModal3");
+      var modal4 = document.getElementById("myModal4");
+      var modal5 = document.getElementById("myModal5");
+      var modal6 = document.getElementById("myModal6");
+      var modal7 = document.getElementById("myModal7");
+      var modal8 = document.getElementById("myModal8");
+      var modal9 = document.getElementById("myModal9");
+      var modal10 = document.getElementById("myModal10");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("temp");
+      var btn2 = document.getElementById("kelemb");
+      var btn3 = document.getElementById("illum");
+      var btn4 = document.getElementById("ach");
+      var btn5 = document.getElementById("forma");
+      var btn6 = document.getElementById("pm2");
+      var btn7 = document.getElementById("pm1");
+      var btn8 = document.getElementById("co2");
+      var btn9 = document.getElementById("co");
+      var btn10 = document.getElementById("voc");
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function() {
+        modal.style.display = "block";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
+        modal5.style.display = "none";
+        modal6.style.display = "none";
+        modal7.style.display = "none";
+        modal8.style.display = "none";
+        modal9.style.display = "none";
+        modal10.style.display = "none";
+      }
+      btn2.onclick = function() {
+        modal.style.display = "none";
+        modal2.style.display = "block";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
+        modal5.style.display = "none";
+        modal6.style.display = "none";
+        modal7.style.display = "none";
+        modal8.style.display = "none";
+        modal9.style.display = "none";
+        modal10.style.display = "none";
+      }
+      btn3.onclick = function() {
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "block";
+        modal4.style.display = "none";
+        modal5.style.display = "none";
+        modal6.style.display = "none";
+        modal7.style.display = "none";
+        modal8.style.display = "none";
+        modal9.style.display = "none";
+        modal10.style.display = "none";
+      }
+      btn4.onclick = function() {
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "block";
+        modal5.style.display = "none";
+        modal6.style.display = "none";
+        modal7.style.display = "none";
+        modal8.style.display = "none";
+        modal9.style.display = "none";
+        modal10.style.display = "none";
+      }
+      btn5.onclick = function() {
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
+        modal5.style.display = "block";
+        modal6.style.display = "none";
+        modal7.style.display = "none";
+        modal8.style.display = "none";
+        modal9.style.display = "none";
+        modal10.style.display = "none";
+      }
+      btn6.onclick = function() {
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
+        modal5.style.display = "none";
+        modal6.style.display = "block";
+        modal7.style.display = "none";
+        modal8.style.display = "none";
+        modal9.style.display = "none";
+        modal10.style.display = "none";
+      }
+      btn7.onclick = function() {
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
+        modal5.style.display = "none";
+        modal6.style.display = "none";
+        modal7.style.display = "block";
+        modal8.style.display = "none";
+        modal9.style.display = "none";
+        modal10.style.display = "none";
+      }
+      btn8.onclick = function() {
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
+        modal5.style.display = "none";
+        modal6.style.display = "none";
+        modal7.style.display = "none";
+        modal8.style.display = "block";
+        modal9.style.display = "none";
+        modal10.style.display = "none";
+      }
+      btn9.onclick = function() {
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
+        modal5.style.display = "none";
+        modal6.style.display = "none";
+        modal7.style.display = "none";
+        modal8.style.display = "none";
+        modal9.style.display = "block";
+        modal10.style.display = "none";
+      }
+      btn10.onclick = function() {
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
+        modal5.style.display = "none";
+        modal6.style.display = "none";
+        modal7.style.display = "none";
+        modal8.style.display = "none";
+        modal9.style.display = "none";
+        modal10.style.display = "block";
+      }
+    </script>
+    <!-- Modals for Line graph  End-->
+    <!-- Prepp for Line Graph End-->
+    
+
+    
+</body>
 <?php
-$kenyamanan_termal=[];
-$kenyamanan_visual=[];
-$kenyamanan_akustik=[];
-$sensasi_termal=[];
-$total=[];
-$kt_sangatbaik = 0;
-
-
-$query_total_responden = $conn->query('SELECT COUNT(survey_id) AS total FROM rsgm.hasil_survey WHERE ruangan_id = 1' );
-$total_responden = $query_total_responden->fetch(PDO::FETCH_ASSOC);
-echo $total_responden['total'];
-
-$query_poe = $conn->query('SELECT COUNT(survey_id) AS total, kenyamanan_termal, kenyamanan_visual, kenyamanan_akustik, sensasi_termal 
-FROM rsgm.hasil_survey
-WHERE ruangan_id=1');
-
-while ($rows = $query_poe->fetch()) {
-    array_push($kenyamanan_termal, $rows['kenyamanan_termal']); // Adding to array
-    array_push($kenyamanan_visual, $rows['kenyamanan_visual']);
-    array_push($kenyamanan_akustik, $rows['kenyamanan_akustik']);
-    array_push($sensasi_termal, $rows['sensasi_termal']);
-}
-
-$data_ka = (array_count_values($kenyamanan_akustik));
-$data_st = (array_count_values($sensasi_termal));
-
-#data kenyamanan termal
-$data_kt = (array_count_values($kenyamanan_termal));
-if (array_key_exists('sangat baik', $data_kt)){
-    $kt_sangatbaik = [$data_kt['sangat baik']];
-}else {
-    $kt_sangatbaik=0;
-}
-if(array_key_exists('baik', $data_kt)){
-    $kt_baik = [$data_kt['baik']];
-}
-else {$kt_baik = 0;
-}
-if(array_key_exists('cukup', $data_kt)){
-    $kt_cukup = ($data_kt['cukup']);
-}else {$kt_cukup = 0;
-}
-if(array_key_exists('buruk', $data_kt)){
-    $kt_buruk = ($data_kt['buruk']);
-}else {$kt_sangatburuk=0;
-}
-if(array_key_exists('sangat buruk', $data_kt)){
-    $kt_sangatburuk = ($data_kt['sangat buruk']);}
-else {$kt_sangatburuk=0;
-}
-
-#data kenyamanan visual
-$data_kv = (array_count_values($kenyamanan_visual));
-if (array_key_exists('sangat baik', $data_kv)){
-    $kv_sangatbaik = intval($data_kv['sangat baik']);
-}else {
-    $kv_sangatbaik=0;
-}
-if(array_key_exists('baik', $data_kv)){
-    $kv_baik = intval($data_kv['baik']);
-}
-else {$kv_baik = 0;
-}
-if(array_key_exists('cukup', $data_kv)){
-    $kv_cukup = intval($data_kv['cukup']);
-}else {$kv_cukup = 0;
-}
-if(array_key_exists('buruk', $data_kv)){
-    $kv_buruk = intval($data_kv['buruk']);
-}else {$kv_sangatburuk=0;
-}
-if(array_key_exists('sangat buruk', $data_kv)){
-    $kv_sangatburuk = intval($data_kv['sangat buruk']);}
-else {$kv_sangatburuk=0;
-}
-
-#data kenyamanan akustik
-$data_ka = (array_count_values($kenyamanan_akustik));
-if (array_key_exists('sangat baik', $data_ka)){
-    $ka_sangatbaik = intval($data_ka['sangat baik']);
-}else {
-    $ka_sangatbaik=0;
-}
-if(array_key_exists('baik', $data_ka)){
-    $ka_baik = intval($data_ka['baik']);
-}
-else {$ka_baik = 0;
-}
-if(array_key_exists('cukup', $data_ka)){
-    $ka_cukup = intval($data_ka['cukup']);
-}else {$ka_cukup = 0;
-}
-if(array_key_exists('buruk', $data_ka)){
-    $ka_buruk = intval($data_ka['buruk']);
-}else {$ka_sangatburuk=0;
-}
-if(array_key_exists('sangat buruk', $data_ka)){
-    $ka_sangatburuk = intval($data_ka['sangat buruk']);}
-else {$ka_sangatburuk=0;
-}
+    $querychart = $conn->query("SELECT sensasi_termal,kenyamanan_termal,kenyamanan_visual,kenyamanan_akustik FROM rsgm.hasil_survey");
+    $st = array();
+    $kt = array();
+    $kv = array();
+    $ka = array();
+    while($rowg = $querychart->fetch()){
+      $st[] = $rowg["sensasi_termal"];
+      $kt[] = $rowg["kenyamanan_termal"];
+      $kv[] = $rowg["kenyamanan_visual"];
+      $ka[] = $rowg["kenyamanan_akustik"];
+    };
+    
 ?>
 
 
-
-
 <script>
-    var kt_sangatbaik = <?php echo json_encode($kt_sangatbaik);?>;
-    var kt_baik = <?php echo json_encode($kt_sangatbaik);?>;
-    var kt_cukup = <?php echo json_encode($kt_cukup);?>;
-    var kt_buruk = <?php echo json_encode($kt_buruk);?>;
-    var kt_sangatburuk = <?php echo json_encode($kt_sangatburuk);?>;
+    var st = <?php echo json_encode($st); ?>;
+    var kt = <?php echo json_encode($kt); ?>;
+    var kv = <?php echo json_encode($kv); ?>;
+    var ka = <?php echo json_encode($ka); ?>;
 
-    var kv_sangatbaik = <?php echo json_encode($kt_sangatbaik);?>;
-    var kv_baik = <?php echo json_encode($kt_sangatbaik);?>;
-    var kv_cukup = <?php echo json_encode($kt_cukup);?>;
-    var kv_buruk = <?php echo json_encode($kt_buruk);?>;
-    var kv_sangatburuk = <?php echo json_encode($kt_sangatburuk);?>;
-
-    var ka_sangatbaik = <?php echo json_encode($kt_sangatbaik);?>;
-    var ka_baik = <?php echo json_encode($kt_sangatbaik);?>;
-    var ka_cukup = <?php echo json_encode($kt_cukup);?>;
-    var ka_buruk = <?php echo json_encode($kt_buruk);?>;
-    var ka_sangatburuk = <?php echo json_encode($kt_sangatburuk);?>;
-
-    var kenyamanan_visual = <?php echo json_encode($kenyamanan_visual);?>;
-    var kenyamanan_visual = kenyamanan_visual.reverse();
-    var kenyamanan_akustik = <?php echo json_encode($kenyamanan_visual);?>;
-    var kenyamanan_akustik = kenyamanan_akustik.reverse();
-    var sensasi_termal = <?php echo json_encode($sensasi_termal);?>;
-    var sensasi_termal = sensasi_termal.reverse();
-
+    const countOccurrences = (arr, val) => arr.reduce((x, f) => (f === val ? x + 1 : x), 0);
+    var jmlst1 = countOccurrences(st,1);
+    var jmlst2 = countOccurrences(st,2);
+    var jmlst3 = countOccurrences(st,3);
+    var jmlst4 = countOccurrences(st,4);
+    var jmlst5 = countOccurrences(st,5);
+    var jmlst6 = countOccurrences(st,6);
+    var jmlst7 = countOccurrences(st,7);
+    var jmlkt1 = countOccurrences(kt,1);
+    var jmlkt2 = countOccurrences(kt,2);
+    var jmlkt3 = countOccurrences(kt,3);
+    var jmlkt4 = countOccurrences(kt,4);
+    var jmlkt5 = countOccurrences(kt,5);
+    var jmlkv1 = countOccurrences(kv,1);
+    var jmlkv2 = countOccurrences(kv,2);
+    var jmlkv3 = countOccurrences(kv,3);
+    var jmlkv4 = countOccurrences(kv,4);
+    var jmlkv5 = countOccurrences(kv,5);
+    var jmlka1 = countOccurrences(ka,1);
+    var jmlka2 = countOccurrences(ka,2);
+    var jmlka3 = countOccurrences(ka,3);
+    var jmlka4 = countOccurrences(ka,4);
+    var jmlka5 = countOccurrences(ka,5);
+    var datast = anychart.data.set([
+	['Dingin', jmlst1],
+	['Sejuk', jmlst2],
+	['Cukup Sejuk', jmlst3],
+	['Netral', jmlst4],
+	['Cukup Hangat', jmlst5],
+	['Hangat', jmlst6],
+	['Panas', jmlst7]
+  ]);
+  chartkt.palette(palettekt);
+  chartkt.title('Kenyamanan Termal');
+  chartkt.container('myChart3');
+  chartkt.draw();
+  var datakv = anychart.data.set([
+	['Sangat Buruk', jmlkv1],
+	['Buruk', jmlkv2],
+	['Cukup', jmlkv3],
+	['Baik', jmlkv4],
+	['Sangat Baik', jmlkv5]
+  ]);
 </script>
 
-
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-        <!-- Custom scripts for all pages-->
-        <script src="js/sb-admin-2.min.js"></script>
-
-        <!-- Page level plugins -->
-        <script src="vendor/chart.js/Chart.min.js"></script>
-
-        <!-- Page level custom scripts -->
-        <script src="js/demo/chart-area-demo.js"></script>
-        <script src="js/demo/chart-pie-demo.js"></script>
 </html>
