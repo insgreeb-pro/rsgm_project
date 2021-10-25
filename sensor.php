@@ -1,6 +1,10 @@
 <?php
     include 'connect.php';
-
+    session_start();
+    
+    if (!isset($_SESSION['email'])){
+        header("location:index.php");
+    }
 ?>
 
 <!doctype html>
@@ -12,13 +16,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Indoor Environment Quality</title>
+    <title>Sensor</title>
 
-    <!-- Custom fonts for this template-->
+    <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <!-- Custom styles for this template-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 </head>
 
 <body id=page-top>
@@ -48,11 +59,16 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="poli_gigi_1.html">Poli Gigi 1</a>
                         <a class="collapse-item" href="poli_gigi_2.html">Poli Gigi 2</a>
-                        <a class="collapse-item" href="poli_gigi_3.html">Poli Gigi 3</a>
-                        <a class="collapse-item" href="poli_gigi_4.html">Poli Gigi 4</a>
-                        <a class="collapse-item" href="poli_gigi_anak.html">Poli Gigi Anak</a>
-                        <a class="collapse-item" href="poli_pendidikan.html">Poli Pendidikan</a>
-                        <a class="collapse-item" href="ruang_tunggu.html">Ruang Tunggu</a>
+                        <a class="collapse-item" href="404.html">Poli Gigi 3</a>
+                        <a class="collapse-item" href="404.html">Poli Gigi 4</a>
+                        <a class="collapse-item" href="404.html">Poli Gigi Anak</a>
+                        <a class="collapse-item" href="404.html">Poli Pendidikan</a>
+                        <a class="collapse-item" href="404.html">Ruang Tunggu</a>
+                        <a class="collapse-item" href="404.html">Lobi</a>
+                        <a class="collapse-item" href="404.html">Ruang Perawat</a>
+                        <a class="collapse-item" href="404.html">Dental X-Ray 1</a>
+                        <a class="collapse-item" href="404.html">Dental X-Ray 2</a>
+                        <a class="collapse-item" href="404.html">Dental X-Ray 3</a>
                     </div>
                 </div>
             </li>
@@ -67,12 +83,17 @@
                 <div id="collapseLt2" class="collapse" aria-labelledby="headingLt2"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="ruang_2A.html">IRNA 1</A></a>
-                        <a class="collapse-item" href="ruang_2B.html">IRNA 2</a>
-                        <a class="collapse-item" href="ruang_2C.html">Ruang Operasi</a>
-                        <a class="collapse-item" href="ruang_2D.html">Ruang Post-Operasi</a>
-                        <a class="collapse-item" href="ruang_2E.html">Ruang X-Ray 1</a>
-                        <a class="collapse-item" href="ruang_2F.html">Ruang X-Ray 2</a>
+                        <a class="collapse-item" href="404.html">Poli Pendidikan</A></a>
+                        <a class="collapse-item" href="404.html">Instalasi Rawat Inap 1</a>
+                        <a class="collapse-item" href="404.html">Ruang Operasi</a>
+                        <a class="collapse-item" href="404.html">Ruang Post-Operasi</a>
+                        <a class="collapse-item" href="404.html">Ruang Pre-Operasi</a>
+                        <a class="collapse-item" href="404.html">ICU</a>
+                        <a class="collapse-item" href="404.html">Ruang Manajemen</a>
+                        <a class="collapse-item" href="404.html">Ruang Direktur</a>
+                        <a class="collapse-item" href="404.html">Ruang Tunggu Keluarga</a>
+                        <a class="collapse-item" href="404.html">Nurse Station</a>
+                        <a class="collapse-item" href="404.html">Area Diskusi</a>
                     </div>
                 </div>
             </li>
@@ -88,16 +109,17 @@
                 <div id="collapseLt3" class="collapse" aria-labelledby="headingLt3"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="ruang_3A.html">IRNA 1</a>
-                        <a class="collapse-item" href="ruang_3B.html">IRNA 2</a>
-                        <a class="collapse-item" href="ruang_3C.html">Poli Pendidikan 3</a>
+                        <a class="collapse-item" href="404.html">Poli Pendidikan</a>
+                        <a class="collapse-item" href="404.html">Ruang OCSE</a>
+                        <a class="collapse-item" href="404.html">Ruang Dosen</a>
+                        <a class="collapse-item" href="404.html">Ruang Komite Medik</a>
+                        <a class="collapse-item" href="404.html">Ruang PDGI</a>
+                        <a class="collapse-item" href="404.html">Kantor Manajemen</a>
                     </div>
                 </div>
             </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider">
-
             <!-- Nav Item - Lantai 4 -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLt4"
@@ -107,17 +129,29 @@
                 <div id="collapseLt4" class="collapse" aria-labelledby="headingLt4"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="ruang_4A.html">Aula</a>
-                        <a class="collapse-item" href="ruang_4B.html">Ruang BoD</a>
+                        <a class="collapse-item" href="404.html">Poli Pendidikan </a>
+                        <a class="collapse-item" href="404.html">Student Center</a>
+                        <a class="collapse-item" href="404.html">Aula</a>
+                        <a class="collapse-item" href="404.html">Mushola</a>
                     </div>
                 </div>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
-
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
+            <!-- Nav Item - Lantai 5 -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLt5"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <span>Lantai 5</span>
+                </a>
+                <div id="collapseLt5" class="collapse" aria-labelledby="headingLt5"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="404.html">Kantor Manajemn</a>
+                        <a class="collapse-item" href="404.html">Kantor Komisaris</a>
+                    </div>
+                </div>
+            </li>
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
@@ -126,6 +160,7 @@
 
         </ul>
         <!-- End of Sidebar -->
+
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -140,43 +175,43 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
+                    <!-- Sidebar Toggle (Topbar) End -->
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
-
-
-                        <!-- Nav Item - Alerts -->
                         <li class="nav-item">
-                            <a class="nav-link" href="energi.php" role="button">
-                                <span>Energi</span>
+                            <a class="nav-link" href="ieq.php" role="button">
+                                <span>Dashboard IEQ</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="air.php" role="button">
-                                <span>Air</span>
+                            <a class="nav-link" href="material.php" role="button">
+                                <span>Material Rendah Emisi</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="site.php" role="button">
-                                <span>Site Planning</span>
+                                <span>Site Plan</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="ieq.php" role="button">
-                                <span>IEQ</span>
+                            <a class="nav-link" href="sensor.php" role="button">
+                                <span>Sensor</span>
                             </a>
                         </li>
+                        
                         <div class="topbar-divider d-none d-sm-block"></div>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php" role="button">
-                                <span>LogOut</span>
+                            <a class="nav-link" href="logout.php">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Logout
                             </a>
                         </li>
-
                     </ul>
-
+                    <!-- Topbar Navbar End -->
                 </nav>
-                <!-- End of Topbar -->
+                <!-- Topbar End -->
+                
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
@@ -190,7 +225,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Material yang berpotensi menghasilkan emisi </h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Daftar Sensor yang Digunakan di  Poli Gigi 1, Lantai 1 </h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -208,10 +243,15 @@
                                     $query_material = $conn->query('SELECT parameter_pengukuran, nama_sensor, link_datasheet FROM rsgm.sensor AS a
                                     INNER JOIN rsgm.ruangan_sensor as b ON a.sensor_id = b.sensor_id
                                     WHERE ruangan_id = 1;');
+                                    
                                     while($row = $query_material->fetch()){
-                                        echo "<tr><td>" . $row['parameter_pengukuran'] .  "</td>";
-                                        echo "<td>" . $row['nama_sensor'] .  "</td>";
-                                        echo "<td>" .$row['link_datasheet'] .  "</td>";
+                                    ?>
+                                    <tr>
+                                        <td><?php  echo  $row['parameter_pengukuran']; ?> </td>
+                                        <td><?php echo $row['nama_sensor']; ?></td>
+                                        <td><a href="<?php echo $row['link_datasheet']; ?>">Datasheet Sensor <?php echo $row['nama_sensor']; ?></a></td>
+                                    </tr>
+                                    <?php
                                     }
                                     ?>
                                     </tbody>
@@ -246,27 +286,7 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -276,6 +296,9 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level plugins -->
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
