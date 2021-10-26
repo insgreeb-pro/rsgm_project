@@ -1003,7 +1003,8 @@
     
 </body>
 <?php
-    $querychart = $conn->query("SELECT sensasi_termal,kenyamanan_termal,kenyamanan_visual,kenyamanan_akustik FROM rsgm.hasil_survey");
+    $querychart = $conn->query(
+        "SELECT sensasi_termal,kenyamanan_termal,kenyamanan_visual,kenyamanan_akustik FROM rsgm.hasil_survey WHERE tanggal_survey >= NOW() - interval '1 month' ");
     $st = array();
     $kt = array();
     $kv = array();
