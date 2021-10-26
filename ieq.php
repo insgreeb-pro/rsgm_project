@@ -51,7 +51,7 @@
                 </a>
                 <div id="collapseLt1" class="collapse" aria-labelledby="headingLt1" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="poli_gigi_1.html">Poli Gigi 1</a>
+                        <a class="collapse-item" href="#">Poli Gigi 1</a>
                         <a class="collapse-item" href="poli_gigi_2.html">Poli Gigi 2</a>
                         <a class="collapse-item" href="404.html">Poli Gigi 3</a>
                         <a class="collapse-item" href="404.html">Poli Gigi 4</a>
@@ -212,7 +212,7 @@
                                                         
                     // Query Realtime Data //
                     $query = $conn->query("SELECT 
-                    TO_CHAR(waktu_akuisisi, 'dd/MM/yyyy HH:mm:ss') AS waktu, 
+                    TO_CHAR(waktu_akuisisi, 'DD-MM-YYYY HH24:MI:ss') AS waktu, 
                     ROUND(iluminansi,1) AS iluminansi, 
                     ROUND(temperatur,1) AS temperatur,
                     ROUND(kelembapan,1) AS kelembapan,
@@ -764,7 +764,7 @@
         $nagf = [];
         $airgf = [];
         $querygrafik_menit = $conn->query(
-            "SELECT TO_CHAR(waktu_akuisisi, 'DD-Mon-YYYY HH24:MI:SS') AS waktu, 
+            "SELECT TO_CHAR(waktu_akuisisi, 'DD-MM HH24:MI:SS') AS waktu, 
             ROUND(iluminansi, 1) AS iluminansi, 
             ROUND(temperatur, 1) AS temperatur,
             ROUND(kelembapan, 1) AS kelembapan,
@@ -784,32 +784,45 @@
             $waktu[] = $rowgm['waktu'];
         }
         
-        $querygrafik_harian= $conn->query(
-            "SELECT TO_CHAR(DATE_TRUNC('hour', waktu_akuisisi), 'HH24:MI') AS waktu_jam, 
-            ROUND(AVG(voc), 2) as tvoc, 
-            ROUND(AVG(pm2_5),2) as pm2_5,
-            ROUND(AVG(pm10), 2) as pm10,
-            ROUND(AVG(co2), 2) as co2,
-            ROUND(AVG(co), 2) as co
+        $querygrafik_perhari= $conn->query(
+            "SELECT TO_CHAR(DATE_TRUNC('hour', waktu_akuisisi), 'HH24:MI') as waktu_hh,
+            ROUND(AVG(co2), 1) as co2,
+            ROUND(AVG(co), 1) as co
             FROM rsgm.realtime_data
-            WHERE ruangan_id=1 AND DATE_TRUNC('day', waktu_akuisisi) >= NOW() - interval '1 day'
-            GROUP BY DATE waktu_jam
-            ORDER BY waktu_akuisisi DESC"
+            WHERE ruangan_id=1 AND DATE_TRUNC('hour', (waktu_akuisisi)) >= NOW() - interval '24 hours'
+            GROUP BY DATE_TRUNC('hour', (waktu_akuisisi))
+            ORDER BY DATE_TRUNC('hour', (waktu_akuisisi)) DESC;"
             );
         $waktu_jam=[];
         $co2gf = [];
-        $tvocgf = [];
-        $pm25gf = [];
-        $pm10gf = [];
         $cogf = [];
-        while ($rowgh = $querygrafik_harian->fetch()){
+        while ($rowgh = $querygrafik_perhari->fetch()){
+            
             $co2gf[] = $rowgh['co2'];
             $cogf[] = $rowgh['co'];
+            $waktu_jam[] = $rowgh['waktu_hh'];
+        }
+        $querygrafik_perbulan= $conn->query(
+            "SELECT TO_CHAR(DATE_TRUNC('day', waktu_akuisisi), 'DD-MM') as waktu_dd,
+            ROUND(AVG(voc), 1) as tvoc,
+            ROUND(AVG(pm2_5), 1) as pm2_5,
+            ROUND(AVG(pm10), 1) as pm10
+            FROM rsgm.realtime_data
+            WHERE ruangan_id=1 AND DATE_TRUNC('day', (waktu_akuisisi)) >= NOW() - interval '1 month'
+            GROUP BY DATE_TRUNC('day', (waktu_akuisisi))
+            ORDER BY DATE_TRUNC('day', (waktu_akuisisi)) DESC"
+            );
+        $waktu_hari=[];
+        $tvocgf = [];
+        $pm25gf = [];
+        $pm10gf =[];
+        while ($rowgb = $querygrafik_perbulan->fetch()){
             $vocgf[] = $rowgh['tvoc'];
             $pm25gf[] = $rowgh['pm2_5'];
             $pm10gf[] = $rowgh['pm10'];
-            $waktu_jam[] = $rowgh['waktu_jam'];
+            $waktu_hari[] = $rowgh['waktu_dd'];
         }
+
     ?>
     <script>
         var waktu = <?php echo json_encode($waktu); ?>;

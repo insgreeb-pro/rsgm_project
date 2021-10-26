@@ -14,7 +14,7 @@ try{
  
  // display a message if connected to the PostgreSQL successfully
  if($conn){
- echo "Connected to the $db database successfully!";
+ #echo "Connected to the $db database successfully!";
  }
 }catch (PDOException $e){
  // report error message
